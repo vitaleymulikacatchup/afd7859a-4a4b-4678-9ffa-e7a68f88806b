@@ -16,7 +16,7 @@ export default function Home() {
       defaultTextAnimation="entrance-slide"
       borderRadius="rounded"
     >
-      <div id="nav" data-section="nav">
+      <div id="nav" data-section="nav" className="scroll-mt-24">
         <NavbarStyleApple
           navItems={[
             { name: "Home", id: "home" },
