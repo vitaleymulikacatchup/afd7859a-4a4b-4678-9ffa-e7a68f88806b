@@ -7,7 +7,7 @@ import PricingCardThree from '@/components/sections/pricing/PricingCardThree';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 
-const assetMap = /* provided JSON array */;
+const assetMap = [{ id: 'hero-image', url: 'https://images.pexels.com/photos/34258667/pexels-photo-34258667.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A person in a hoodie coding on dual monitors, depicting cybersecurity and hacking themes.' }];
 
 export default function Home() {
   return (
@@ -63,7 +63,7 @@ export default function Home() {
             title="Choose Your Plan"
             plans={[
               { id: "1", price: "$19/mo", name: "Basic", buttons: [{ text: "Select Plan", href: "signup" }], features: ["Up to 5 users", "10GB storage"] },
-              { id: "2", badge: "Most popular plan", badgeIcon: undefined, price: "$49/mo", name: "Pro", buttons: [{ text: "Select Plan", href: "signup" }], features: ["Up to 20 users", "100GB storage", "24/7 support"] }
+              { id: "2", badge: "Most popular plan", price: "$49/mo", name: "Pro", buttons: [{ text: "Select Plan", href: "signup" }], features: ["Up to 20 users", "100GB storage", "24/7 support"] }
             ]}
             className="bg-pink-100 text-gray-900"
           />
